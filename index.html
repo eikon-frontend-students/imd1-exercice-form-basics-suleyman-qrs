@@ -8,61 +8,44 @@
   </head>
   <body>
     <main>
-      <h1>Les différents types d'input</h1>
+      <h1>Discutons et collaborons sur des projets super!</h1>
+      <form>
+        <div class="demo">
+          <legend>je suis intéressé par</legend>
+          <div>       
+          <input type="radio" id="uiux" name="radio" value="UI/UX Design" />
+          <label for="ui/ux">UI/UX Design</label>
+          </div>
+          <div>   
+          <input type="radio" id="web design" name="radio"  value="Web design" />
+          <label for="web design">Web design</label>
+        </div>
+          <div> 
+          <input type="radio" id="graphic design" name="radio"  value="Graphic design" />
+          <label for="graphic design">Graphic design</label>
+        </div>
+          <div> 
+          <input type="radio" id="other" name="radio"  value="Other" />
+          <label for="other">Other</label>
+        </div>
+                     
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" placeholder="Votre prénom" />
 
-      <h2><code>text</code></h2>
-      <div class="demo">
-        <input type="text" />
-      </div>
+          <label for="email">Email *</label>
+          <input type="email" id="email" placeholder="Votre email" required />
 
-      <h2><code>password</code></h2>
-      <!-- 🦊 Complétez tous les <div class="demo"> avec l'input correspondant -->
-      <div class="demo"></div>
-
-      <h2><code>email</code></h2>
-      <div class="demo"></div>
-
-      <h2><code>url</code></h2>
-      <div class="demo"></div>
-
-      <h2><code>checkbox</code></h2>
-      <div class="demo"></div>
-
-      <h2><code>radio</code></h2>
-      <div class="demo"></div>
-
-      <h2><code>date</code></h2>
-      <div class="demo"></div>
-
-      <h2><code>datetime-local</code></h2>
-      <div class="demo"></div>
-
-      <h2><code>time</code></h2>
-      <div class="demo"></div>
-
-      <h2><code>range</code></h2>
-      <div class="demo"></div>
-
-      <h2><code>number</code></h2>
-      <div class="demo"></div>
-
-      <h2><code>file</code></h2>
-      <div class="demo"></div>
-
-      <h2><code>tel</code></h2>
-      <div class="demo"></div>
-
-      <h2><code>color</code></h2>
-      <div class="demo"></div>
-
-      <h2><code>reset</code></h2>
-      <div class="demo"></div>
-
-      <h2><code>search</code></h2>
-      <div class="demo"></div>
-
-      <h2><code>hidden</code></h2>
-      <div class="demo"></div>
+          <label for="message">Message *</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Votre message"
+            required
+          ></textarea>
+        </div>
+      </form>
     </main>
   </body>
 </html>
